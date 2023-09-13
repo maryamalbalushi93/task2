@@ -1,0 +1,30 @@
+
+<div class="header">
+    <h1>Student Mark 2023</h1>
+  </div>
+
+<div class="container">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">NAME</th>
+          <th scope="col">EMAIL</th>
+          <th scope="col">MARKS (out of 100)</th>
+          <th scope="col">PASS/FAIL</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let student of students; let i = index" [ngClass]="{ 'fail': student.marks < 50 }">
+          <td>{{ student.name }}</td>
+          <td>{{ student.email }}</td>
+          <td>{{ student.marks }}</td>
+          <td>
+            <span *ngIf="student.marks >= 50" class="pass-badge badge">PASS</span>
+            <span *ngIf="student.marks < 50" class="fail-badge badge">FAIL</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+  

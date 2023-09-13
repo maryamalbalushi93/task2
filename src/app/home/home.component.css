@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .button-container {
+    text-align: center;
+  }
+  
+  .button-container button {
+    font-size: 1.5em;
+    margin-top: 20px;
+  }
+  .header {
+    background-color: #001f3f;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .header h1 {
+    margin: 0;
+    font-size: 2em;
+  }

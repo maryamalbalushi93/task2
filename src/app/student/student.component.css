@@ -1,0 +1,24 @@
+.pass-badge {
+    color: white;
+    background-color: green;
+  }
+  
+  .fail-badge {
+    color: white;
+    background-color: red;
+  }
+  .header {
+    background-color: #062d55;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .header h1 {
+    margin: 0;
+    font-size: 2em;
+  }
+  
+  .container {
+    margin-top: 30px;
+  }
